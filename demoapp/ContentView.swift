@@ -16,7 +16,9 @@ struct ContentView: View {
                 .cornerRadius(10)
                 .aspectRatio(contentMode: .fit)
                 .padding(.all)
-
+            Text("meow!")
+                .font(.title)
+                .fontWeight(.regular)
         }
 
     }
