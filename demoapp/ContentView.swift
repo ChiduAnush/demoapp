@@ -10,16 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack {
-            Image("blackcat")
-                .resizable()
-                .cornerRadius(10)
-                .aspectRatio(contentMode: .fit)
-                .padding(.all)
-            Text("meow!")
-                .font(.title)
-                .fontWeight(.regular)
+        
+        ZStack {
+            Color(.black).ignoresSafeArea()
+            
+            VStack {
+                Image("blackcat")
+                    .resizable()
+                    .cornerRadius(10)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all)
+                Text("meow!")
+                    .font(.title)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.white)
+                
+            }
         }
+        
 
     }
 }
